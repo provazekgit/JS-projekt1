@@ -1,0 +1,180 @@
+/* Desktopové menu – zobrazí se pouze na větších zařízeních */
+.desktop-menu {
+    display: flex;
+}
+/* vzhled navigace pro tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Navigace pro tablety */
+    nav ul {
+        margin: 0; /* Odstranění vnějšího odsazení */
+        padding: 0; /* Odstranění vnitřního odsazení */
+    }
+
+    nav ul li {
+        padding: 0 5px; /* Snížení vnitřního odsazení položek menu */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Zmenšení velikosti písma pro lepší čitelnost na tabletech */
+        padding: 8px 10px; /* Menší odsazení kolem textu */
+    }
+}
+
+/* vzhled navigace pro mobil */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+}
+
+/* Mobilní menu – zobrazí se pouze na mobilních zařízeních */
+.mobile-menu {
+    display: none;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Kontejner pro text "MENU", hamburger/křížek ikonu a logo */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row-reverse; /* Prohodí logo a menu s hamburgerem */
+    }
+}
+
+/* Wrapper pro text MENU a ikony */
+.menu-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Styl pro text "MENU" */
+.menutext {
+    color: var(--nav-color);
+    font-size: 1.2rem;
+}
+
+/* Hamburger ikona */
+.hamburger-lines {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 26px;
+    width: 32px;
+}
+
+.hamburger-lines .line {
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .hamburger-lines {
+        display: flex;
+    }
+}
+
+/* Křížek ikona */
+.close-icon {
+    display: none;
+    font-size: 2rem;
+    color: var(--nav-color);
+    cursor: pointer;
+}
+
+/* Mobilní menu položky – zobrazí se pod hamburgerem a logem přes celou šířku */
+.mobile-menu-items {
+    display: none;
+    width: 100%;
+    background-color: var(--nav-background-color);
+    position: absolute;
+    top: 67px;
+    left: 0;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.mobile-menu-items:hover {
+    color: var(--link-color);
+}
+
+/* Hover efekty pro položky v mobilním menu */
+.mobile-menu-items li a:hover {
+    color: var(--link-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 5px 10px;
+}
+
+/* Zobrazení mobilního menu po kliknutí na hamburger */
+@media (max-width: 768px) {
+    .mobile-menu-items.show {
+        display: block;
+    }
+}
+
+/* Mobilní menu položky */
+.mobile-menu-items li {
+    text-align: center;
+    padding: 10px 0;
+    list-style-type: none; /* Odstranění odrážek */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Jemné ohraničení mezi položkami */
+}
+
+.mobile-menu-items li:last-child {
+    border-bottom: none; /* Odstranění spodního ohraničení u poslední položky */
+}
+.mobile-menu-items li a {
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Logo v mobilním menu */
+.mobile-logo {
+    display: none;
+    color: var(--nav-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-logo {
+        display: block;
+    }
+}
+
+/* Hover efekty pro text "MENU", čáry hamburgeru a křížek */
+.menutext:hover, 
+.hamburger-lines:hover .line, 
+.close-icon:hover, 
+.icon-wrapper:hover .line {
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.hamburger-lines:hover .line {
+    background-color: var(--link-color);
+}
+
+.close-icon:hover {
+    color: var(--link-color);
+}

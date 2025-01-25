@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+    <link rel="stylesheet" href="mobile-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div id="main-container">
+    <!-- pc menu -->
+    <nav>
+        <ul class="desktop-menu">
+            <li><a href="#sekce2" title="About Us">About Us</a></li>
+            <li><a href="#sekce3" title="What We Do">What We Do</a></li>
+            <li><a href="#sekce4" title="Our Trips">Our Trips</a></li>
+            <li><a href="#sekce5" title="Where To Go">Where To Go</a></li>
+            <li><a href="#sekce6" title="Reviews">Reviews</a></li>
+        </ul>
+        
+        <!-- mobil menu -->
+        <div class="navbar mobile-menu">
+            <div class="container nav-container">
+                <!-- Wrapper pro text MENU a hamburger/křížek ikonu -->
+                <div class="menu-toggle-wrapper" onclick="toggleMenu()">
+                    <div class="menutext">MENU</div>
+                    
+                    <!-- Ikony pro hamburger a křížek -->
+                    <div class="icon-wrapper">
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <div class="close-icon">&times;</div>
+                    </div>
+                </div>
+                
+                <!-- Logo mobilní navigace na opačné straně -->
+                <a href="index.html" class="mobile-logo">
+                    <h1>Travel Assistant</h1>
+                </a>
+                
+                <!-- Navigační položky, které se mají zobrazit/skryt -->
+                <div class="mobile-menu-items">
+                    <li><a href="#sekce2" title="About Us">About Us</a></li>
+                    <li><a href="#sekce3" title="What We Do">What We Do</a></li>
+                    <li><a href="#sekce4" title="Our Trips">Our Trips</a></li>
+                    <li><a href="#sekce5" title="Where To Go">Where To Go</a></li>
+                    <li><a href="#sekce6" title="Reviews">Reviews</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sekce 1 -->
+    <div id="sekce1">
+        <h1>You<br/> Travel<br/> Assistent</h1>
+    </div>
+    
+    <!-- sekce 2 -->
+    <div id="sekce2">
+        <div class="levysloupec">
+            <h2>About Us</h2>
+            <p>
+                Leigh McAdam is a Calgary-based writer, photographer and social media enthusiast with over 48,000 followers. Her blog: HikeBikeTravel is frequently cited as one of the top travel and outdoor adventure blogs in Canada, and consistently receives over 135,000 monthly page views. She shares her enthusiasm for the outdoors as a brand ambassador for Sporting Life, and has worked on campaigns for Travel Alberta, Expedia and Flight Hub. Leigh is the author of Discover Canada: 100 Inspiring Outdoor Adventures. Currently, she is co-authoring: 125 Nature Hot Spots in Alberta (spring 2018). A true adventurer, Leigh will try anything once, except perhaps bungee jumping.
+            </p>
+        </div>
+        <img class="pravysloupec" src="images/sekce2.jpg" alt="Foto 2" title="Foto 2">
+    </div>
+
+    <!-- sekce 3 -->
+    <div id="sekce3">
+        <div class="center">
+            <h2>What We Do</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, earum quo. Repudiandae quibusdam, asperiores enim minus necessitatibus sapiente numquam fugiat qui ullam. Rem, quisquam soluta consectetur velit itaque voluptatem dolor.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, earum quo. Repudiandae quibusdam, asperiores enim minus necessitatibus sapiente numquam fugiat qui ullam. Rem, quisquam soluta consectetur velit itaque voluptatem dolor.
+            </p>
+        </div>
+        <div class="fotocontainer">
+            <div class="obrazek-container">
+                <img src="icons/png-icons-white/hiking-white.png" alt="hiking" title="Hiking">
+                <p class="popis">Hiking</p>
+            </div>
+            <div class="obrazek-container">
+                <img src="icons/png-icons-white/cycle-white.png" alt="cycle-white" title="Cykling">
+                <p class="popis">Cykling</p>
+            </div>
+            <div class="obrazek-container">
+                <img src="icons/png-icons-white/water-white.png" alt="cycle-white" title="Surfing">
+                <p class="popis">Surfing</p>
+            </div>
+            <div class="obrazek-container">
+                <img src="icons/png-icons-white/car-white.png" alt="car-white" title="Car trips">
+                <p class="popis">Car trips</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- sekce 4 -->
+    <div id="sekce4">
+        <div class="gallery">
+            <div class="gallery-item"><img src="images/photo1.jpg" alt="Photo 1"></div>
+            <div class="gallery-item"><img src="images/photo2.jpg" alt="Photo 2"></div>
+            <div class="gallery-item"><img src="images/photo3.jpg" alt="Photo 3"></div>
+            <div class="gallery-item"><img src="images/photo4.jpg" alt="Photo 4"></div>
+            
+            <!-- Prostřední div s nadpisem -->
+            <div class="gallery-item center-item">
+                <h2>Our Trips</h2>
+            </div>
+            
+            <div class="gallery-item"><img src="images/photo5.jpg" alt="Photo 5"></div>
+            <div class="gallery-item"><img src="images/photo6.jpg" alt="Photo 6"></div>
+            <div class="gallery-item"><img src="images/photo7.jpg" alt="Photo 7"></div>
+            <div class="gallery-item"><img src="images/photo8.jpg" alt="Photo 8"></div>
+        </div>
+    </div>
+    
+    <!-- sekce 5 -->
+    <div id="sekce5">
+        <div class="columns">
+            <!-- Levý sloupec s odstavci -->
+            <div class="left-column">
+                <h2>Where do&nbsp;you want to&nbsp;go?</h2>
+                
+            </div>
+            
+            <!-- Pravý sloupec s nadpisem a tlačítkem -->
+            <div class="right-column">
+                <p>You’ll find 21 detailed adventure guides, over a hundred practical travel tips, book reviews on anything outdoors related, packing lists on a range of outdoor activities including kayaking, backpacking and camping as well as honest hotel and B&B reviews. </p>
+                <p>Contact us and we will help you!</p>
+                <div class="button-container">
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sekce 6-->
+    <div id="sekce6">
+        <div class="center2">
+            <h2>Reviews</h2>
+            <p>Our amazing clients are the reason we exist, and their reactions to our customized travel experiences and personalized service keep us smiling all day long. Here is just a sampling of what they’ve said:</p>
+        </div>
+    </div>
+    
+    <!-- sekce 7 -->
+    <div id="sekce7">
+        <div class="columns">
+            <!-- Levý sloupec s odstavci -->
+            <div class="left-column2">
+                <img src="images/photo10.jpg" alt="Foto" title="">
+                <p>She has booked two major European trips for us in the past year and every aspect has met, and in most cases exceeded, our expectations. Best prices, best hotels, best itineraries, and best cruises, she does it all. But the most important thing is she remembers the little things that we would do if we were making the plans ourselves. </p>
+                <h5>Bertie Norton</h5>
+            </div>
+            
+            <!-- Pravý sloupec s nadpisem a tlačítkem -->
+            <div class="right-column2">
+                <img src="images/photo11.jpg" alt="Foto" title="">
+                <p>Leigh McAdam has been making my travel arrangements for about 20 years and there is no one else I would trust to arrange my trips and tours. I've also had great  fun on a few of the group trips she has arranged - Peru & Machu Picchu and a 10-day cruise out of Venice and diving. It's always an eclectic group of well traveled, interesting people. </p>
+                <h5>Frank KinneyFooter</h5>
+            </div>
+        </div>
+    </div>
+    <div id="sekce8">
+        <div class="gallery2">
+            <div class="gallery-item2"><img src="images/photo21.jpg" alt="Foto 1"></div>
+            <div class="gallery-item2"><img src="images/photo22.jpg" alt="Foto 2"></div>
+            <div class="gallery-item2"><img src="images/photo23.jpg" alt="Foto 3"></div>
+            <div class="gallery-item2"><img src="images/photo24.jpg" alt="Foto 4"></div>
+        </div>
+    </div>
+    <!-- Footer -->
+     <footer>
+        <div style="text-align:center;">
+            <h6>Contact</h6>
+            <p>© 2024 - Your Travel Assistant. All Rights Reserved.</p>
+        </div>
+     </footer>
+       
+</div>
+
+<!-- Skript pro ovládání mobilního menu -->
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.mobile-menu-items');
+        const closeIcon = document.querySelector('.close-icon');
+        const hamburgerIcon = document.querySelector('.hamburger-lines');
+        
+        menu.classList.toggle('show');
+        
+        if (menu.classList.contains('show')) {
+            hamburgerIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        } else {
+            hamburgerIcon.style.display = 'flex';
+            closeIcon.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
